@@ -1,0 +1,38 @@
+<div class="container">
+    <div class="row product-details">
+        <div class="col-sm-3">
+            <img src="{{productDetails.thumbnail}}" class="img-fluid" alt="" width="100%" height="400px"
+                style="object-fit: contain;border-radius: 10%;">
+            <div class="mt-3">
+                <button class="btn btn-primary"> Buy Now </button> &nbsp;
+                <button class="btn btn-success" (click)="addToCart(productDetails)" *ngIf="showAddToCartButton"> Add to
+                    Cart </button>
+                <button class="btn btn-danger" (click)="removeItem(productDetails)" *ngIf="!showAddToCartButton">
+                    <i class="fas fa-remove"></i> Remove Item
+                </button>
+
+
+            </div>
+        </div>
+
+        <div class="col-sm-8">
+            <div class="">
+                <h1>{{productDetails.title}}</h1>
+                <p>{{productDetails.brand}}</p>
+                <h3 style="color: gray;">$ {{productDetails.price}}</h3>
+                <strong>{{productDetails.category}}</strong>
+                <strong>{{productDetails.description}}</strong>
+                <p>{{productDetails.discountPercentage}} % discount</p>
+                <strong>{{productDetails.stock}} units left</strong>
+                <br>
+                <button class="btn btn-info">
+                    <a style="cursor:pointer" (click)="backToHome()">
+                        <strong>
+                            <i class="fas fa-home"></i> Back to Home
+                        </strong>
+                    </a>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
