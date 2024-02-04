@@ -1,0 +1,33 @@
+<div class="container">
+    <h4>Employee Records</h4>
+    <nav class="nav navbar">
+        <input type="text" class="form-control" (ngModelChange)="searchValue()" placeholder="enter first name to search"
+            [(ngModel)]="firstname" name="firstname" id="firstname">
+    </nav>
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th (click)="sortRecords('id')">Id&nbsp;<i class="fas fa-sort"></i></th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Email</th>
+                <th>Mobile</th>
+                <th>Salary</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- | orderBy : key : reverse  | paginate{itemsPerpage:5,currentPage:pno}-->
+            <tr *ngFor="let item of records ;let i=index;">
+                <td>{{i+1}}</td>
+                <td>{{item.firstname}}</td>
+                <td>{{item.lastname}}</td>
+                <td>{{item.email}}</td>
+                <td>{{item.mobile}}</td>
+                <td>{{item.salary}}</td>
+            </tr>
+        </tbody>
+        <pagination-controls (pageChange)="pno=$event">
+
+        </pagination-controls>
+    </table>
+</div>

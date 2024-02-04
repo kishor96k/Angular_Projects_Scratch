@@ -1,0 +1,44 @@
+{
+    "records": [
+        {
+            "id": 1,
+            "firstname": "kishor",
+            "lastname": "chavan",
+            "email": "chavankishor8143@gmail.com",
+            "mobile": 91362222,
+            "salary": 1234
+        },
+        {
+            "id": 2,
+            "firstname": "darshan",
+            "lastname": "inde",
+            "email": "indedarshan8143@gmail.com",
+            "mobile": 91362222,
+            "salary": 1234
+        },
+        {
+            "id": 3,
+            "firstname": "jagdish",
+            "lastname": "patil",
+            "email": "patiljagdish8143@gmail.com",
+            "mobile": 91362222,
+            "salary": 1234
+        },
+        {
+            "id": 4,
+            "firstname": "pratik",
+            "lastname": "shinde",
+            "email": "shindepratik8143@gmail.com",
+            "mobile": 91362222,
+            "salary": 1234
+        },
+        {
+            "id": 5,
+            "firstname": "vishal",
+            "lastname": "patil",
+            "email": "patilvishal8143@gmail.com",
+            "mobile": 91362222,
+            "salary": 1234
+        }
+    ]
+}
